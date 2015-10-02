@@ -22,3 +22,14 @@ var romanNumerals = function(userInput) {
     }
   }
 };
+
+$(document).ready(function() {
+  $("form#romanNumerals").submit(function(event) {
+    var userInput = parseInt($("input#number").val());
+    var result = romanNumerals(userInput);
+
+    $(".result").text(result);
+    $("#result").show();
+    event.preventDefault();
+  });
+});

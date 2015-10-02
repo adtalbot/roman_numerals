@@ -1,5 +1,11 @@
 var romanNumerals = function(userInput) {
-  if(userInput === "1") {
-    return "I";
-  };
+  var i = "";
+  for(var j = 1; j < 5; j++) {
+    if(userInput === j) {
+      i += "I";
+      return i;
+    } else {
+      i += "I";
+    }
+  }
 };

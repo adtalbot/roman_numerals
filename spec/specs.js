@@ -6,4 +6,8 @@ describe("romanNumerals", function() {
   it("adds additional I's for numbers under 5", function() {
     expect(romanNumerals(2)).to.equal("II");
   });
+
+  it("for 5 it returns V", function() {
+    expect(romanNumerals(5)).to.equal("V");
+  });
 });

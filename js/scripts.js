@@ -3,7 +3,7 @@ var romanNumerals = function(userInput) {
   var units = 0;
   var unitsArr = [];
   var remainder = 0;
-  var symNum = [100,50,10,5,1];
+  var symNum = [500,100,50,10,5,1];
 
   for(index = 0; index < symNum.length; index++) {
     units = parseInt(userInput / symNum[index]);
@@ -18,11 +18,11 @@ var romanNumerals = function(userInput) {
     var rNum = function(result) {
     var i;
     var index;
-    var arr = ["C","L","X","V","I"];
+    var arr = ["M","C","L","X","V","I"];
     var units= 0;
     var totalNum = "";
 
-    for(index = 0; index < 5; index++) {
+    for(index = 0; index < 6; index++) {
       units = result[index];
       for(i = 0; i < units; i++) {
         totalNum += arr[index];

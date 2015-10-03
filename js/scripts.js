@@ -34,7 +34,7 @@ var romanNumerals = function(userInput) {
 
 $(document).ready(function() {
   $("form#romanNumerals").submit(function(event) {
-    var userInput = parseInt($("input#number").val());
+    var userInput = parseInt($("input#userInput").val());
     var result = romanNumerals(userInput);
     var finalResult = rNum(result);
 

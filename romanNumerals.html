@@ -19,12 +19,12 @@
             </ul>
           </div>
         </nav>
-
-        <div id='header'>
+        <div class='container'>
           <div class='jumbotron'>
             <h1>Roman Numeral Game</h1>
           </div>
         </div>
+
         <div id='content'>
         	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam gravida enim ut risus.
         	Praesent sapien purus, ultrices a, varius ac, suscipit ut, enim. Maecenas in lectus.
@@ -32,9 +32,20 @@
         	euismod vulputate. Nullam rhoncus mauris ac metus. Maecenas vulputate aliquam odio.
         	Duis scelerisque justo a pede. Nam augue lorem, semper at, porta eget, placerat eget,
         	purus. Suspendisse mattis nunc vestibulum ligula. In hac habitasse platea dictumst.
+
+          <form id='romanNumerals'>
+            <div class='form-group'>
+              <label for='userInput'>Enter a number:</label>
+              <input id='userInput' name='userInput' class='form-control' placeholder='Number' type='text'>
+              <button type='submit' class='btn btn-default btn-xs'>Submit</button>
+          </form>
         </div>
-        <div id='footer'>Footer
+
+        <div id='result'>
+          <p><span class='result'></span></p>
         </div>
+
       </div>
+    </div>
   </body>
 </html>

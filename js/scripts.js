@@ -1,36 +1,3 @@
-// var romanNumerals = function(userInput) {
-//   var i = "";
-//   if(!multOf5) {
-//
-//     for(var j = 1; j < 10; j++) {
-//       if(userInput === j) {
-//         i += "I";
-//         return i;
-//       } else {
-//         i += "I";
-//       }
-//     }
-//   } else if(multOf5) {
-//
-//       for(var j = 5; j < 100; j+= 5) {
-//         if(userInput === j) {
-//           i += "V";
-//           return i;
-//         } else {
-//           i += "V";
-//         }
-//       }
-//   }
-// };
-//
-// var multOf5 = function(userInput) {
-//   if(userInput % 5 === 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
-
 var romanNumerals = function(userInput) {
   var index;
   var units = 0;
@@ -44,19 +11,34 @@ var romanNumerals = function(userInput) {
     unitsArr.push(units);
     userInput = remainder;
   }
-  return unitsArr;
-};
+    return unitsArr;
+  };
 
+    var result = romanNumerals();
+    var rNum = function(result) {
+    var i;
+    var index;
+    var arr = ["C","L","X","V","I"];
+    var units= 0;
+    var totalNum = "";
 
-
+    for(index = 0; index < 5; index++) {
+      units = result[index];
+      for(i = 0; i < units; i++) {
+        totalNum += arr[index];
+      }
+    }
+    return totalNum;
+  };
 
 
 $(document).ready(function() {
   $("form#romanNumerals").submit(function(event) {
     var userInput = parseInt($("input#number").val());
     var result = romanNumerals(userInput);
+    var finalResult = rNum(result);
 
-    $(".result").text(result);
+    $(".result").text(finalResult);
     $("#result").show();
     event.preventDefault();
   });

@@ -1,40 +1,38 @@
-body {
-  background-color: #5d5d5d;
-  font-family: 'Slackey', cursive;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
+#page-container {
+  width: 960px;
+  margin: auto;
+  color: #fff;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+#header {
+  height: 150px;
+
+}
 .jumbotron {
+  background-color: #946b2d;
+  text-align: center;
+}
+
+#content {
+  background-color: #5d5d5d;
+}
+
+#footer {
   background-color: #222f5b;
-  color: #946b2d;
-  text-align: center;
+  height : 66px;
+  clear: both;
 }
 
-.label {
-  font-size: 25px;
-  text-align: center;
-  color: #222f5b;
-}
-
-.form-group  {
-  margin: 50px;
-  text-align: center;
-}
-
-.btn {
-  margin: 15px;
-  background-color: #222f5b;
-  color: #946b2d;
-}
-
-.form-control {
-  margin: 15px;
-}
-
-#result {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
+h1 {
+  margin: 0;
+  padding: 0;
 }

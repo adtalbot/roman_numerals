@@ -97,7 +97,7 @@ require.latest = function (name, returnPath) {
     return require(module);
   }
   // if the build contains more than one branch of the same module
-  // you should not use this funciton
+  // you should not use this function
   var module = otherCandidates.sort(function(a, b) {return a.name > b.name})[0].name;
   if (returnPath === true) {
     return module;
@@ -1172,7 +1172,7 @@ module.exports = function (chai, _) {
    *
    * Asserts that the target is truthy.
    *
-   *     expect('everthing').to.be.ok;
+   *     expect('everything').to.be.ok;
    *     expect(1).to.be.ok;
    *     expect(false).to.not.be.ok;
    *     expect(undefined).to.not.be.ok;
